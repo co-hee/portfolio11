@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+    /* 폰트의 배수로 키움. 상하 여백 */
+    letter-spacing: -0.025em;
+    font-family: 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
+}
+
+p {
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+
+}
+
+li {
+    list-style: none;
+}
+
+em,
+i,
+strong,
+address {
+    font-style: normal;
+}
