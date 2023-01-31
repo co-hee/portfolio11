@@ -1,0 +1,236 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 100px;
+    z-index: 999999;
+
+    color: #fff;
+    margin: 0 auto;
+}
+
+.header .inner {
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 60px;
+    font-size: 17px;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+    flex: 1;
+    padding: 0 20px;
+    transition: 0.3s;
+}
+
+.header .gnb>ul>li ul {
+    position: absolute;
+    top: 80px;
+    left: -40px;
+    background: #fff;
+    width: 180%;
+    z-index: 999;
+    color: #4b4b4b;
+    visibility: hidden;
+    height: 0;
+}
+
+.header .gnb>ul>li::before {
+    content: '';
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background: #ffb500;
+    transition: 0.3s;
+}
+
+.header .gnb>ul>li:hover::before {
+    width: 100%;
+    background: #ffb500;
+}
+
+.header .gnb>ul>li:hover {
+    color: #ffb500;
+}
+
+.header .gnb>ul>li ul li {
+    padding: 15px 10px;
+    line-height: 10px;
+}
+
+.header .gnb>ul>li:hover ul {
+    visibility: visible;
+    height: auto;
+}
+
+.header .gnb>ul>li ul li:hover {
+    background: #ffb500;
+    color: #fff;
+}
+
+/* .mainVisual { */
+
+.mainVisual {
+    position: relative;
+    margin: 0 auto;
+}
+
+.mainVisual .case {
+    display: flex;
+    background: #005ad5;
+}
+
+.mainVisual .case>div {
+    flex: 1;
+    overflow: hidden;
+}
+
+.mainVisual .slide_img .v01 {
+    height: 100vh;
+    background: url(../img/main_img1.png) no-repeat center center / cover;
+    font-size: 0;
+}
+
+.mainVisual .slide_img .v02 {
+    height: 100vh;
+    background: url(../img/main_img2.png) no-repeat center center / cover;
+    font-size: 0;
+}
+
+.mainVisual .slide_img .v03 {
+    height: 100vh;
+    background: url(../img/main_img3.jpg) no-repeat center center / cover;
+    font-size: 0;
+}
+
+.mainVisual .slide_txt {
+    margin: auto;
+}
+
+.mainVisual .slide_txt>div {
+    margin: auto 0 auto 200px;
+    outline: 1px solid tomato;
+}
+
+.mainVisual .slide_txt>div span {
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Playfair Display';
+}
+
+.mainVisual .slide_txt>div span {
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Playfair Display';
+    margin-bottom: 10px;
+}
+
+.mainVisual .slide_txt>div h2 {
+    font-size: 80px;
+    color: #ffb500;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.mainVisual .slide_txt>div p {
+    font-size: 17px;
+    color: #ffb500;
+    margin-bottom: 40px;
+}
+
+.mainVisual .slide_txt>div strong {
+    font-size: 17px;
+    color: #fff;
+}
+
+.mainVisual .slide_txt>div strong i::before {
+    content: '';
+    font-size: 25px;
+    color: #fff;
+
+    background: rgb(108, 187, 233);
+    border-radius: 50%;
+    text-align: center;
+    /* border: 1px dotted #fff; */
+}
+
+.mainVisual .img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.mainVisual .img.vibration {
+    animation: vibration ease-in-out 1s infinite alternate;
+}
+
+@keyframes vibration {
+    from {
+        transform: translate(-50%, -50%) rotate(3deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(-3deg);
+    }
+}
+
+.mainVisual .arrows {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    font-size: 0;
+}
+
+.mainVisual .arrows .prevArrow {
+    display: block;
+    background: url(../img/slide-prev.png)no-repeat center center /cover;
+    width: 166px;
+    height: 78px;
+}
+
+.mainVisual .arrows .nextArrow {
+    display: block;
+    background: url(../img/slide-next.png)no-repeat center center /cover;
+    width: 166px;
+    height: 78px;
+}
+
+.mainVisual .Navi {
+    position: absolute;
+    top: 50%;
+    left: 93%;
+    transform: translate(0, -50%);
+}
+
+.mainVisual .Navi>div {
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.mainVisual .Navi>div img {
+    display: block;
+    width: 61px;
+    height: 61px;
+    padding: 13px;
+    background: #004bba;
+    border-radius: 100%;
+    -webkit-box-shadow: 10px 0px 7px 0px rgb(0 0 0 / 8%);
+    margin-bottom: 10px;
+}
+
+/* } .mainVisual */

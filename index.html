@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>앤티앤스 프레즐</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
 </head>
 
@@ -26,8 +30,8 @@
                 </h1>
                 <nav class="gnb">
                     <ul>
-                        <li><a href="">앤티앤스</a></li>
-                        <li><a href="">메뉴소개</a>
+                        <li><a href="#sec01">앤티앤스</a></li>
+                        <li><a href="#sec02">메뉴소개</a>
                             <ul>
                                 <li><a href="">NEW</a></li>
                                 <li><a href="">ALL</a></li>
@@ -46,7 +50,7 @@
                                 <li><a href="">당첨자 발표</a></li>
                             </ul>
                         </li>
-                        <li><a href="">커뮤니티</a>
+                        <li><a href="#sec03">커뮤니티</a>
                             <ul>
                                 <li><a href="">공지사항</a></li>
                                 <li><a href="">고객의 소리</a></li>
@@ -55,7 +59,7 @@
                                 <li><a href="">제휴/제안</a></li>
                             </ul>
                         </li>
-                        <li><a href="">프랜차이즈</a>
+                        <li><a href="#sec04">프랜차이즈</a>
                             <ul>
                                 <li><a href="">개설 조건 및 절차</a></li>
                                 <li><a href="">개설 비용 및 안내</a></li>
@@ -68,56 +72,191 @@
                 </nav>
             </div>
         </header>
-        <main>
-            <section class="mainVisual">
-                <div class="slide_img">
-                    <figure>
-                        <div class="slide01">
-                            <img src="./img/main_img1.png" alt="">
-                            <div class="main_txt">
-                                <span>Auntie Anne's Season Menu</span>
+        <main id="fullpage">
+            <section class="mainVisual section">
+                <div class="case">
+                    <div class="slide_img">
+                        <figure class="v01">
+                            01
+                        </figure>
+                        <figure class="v02">
+                            02
+                        </figure>
+                        <figure class="v03">
+                            03
+                        </figure>
+                    </div>
+                    <div class="slide_txt">
+                        <figure>
+                            <div class="txt01">
+                                <span data-aos="fade-down">Auntie Anne's
+                                    Season Menu</span>
                                 <h2>고구마<br />크림치즈스틱 3종</h2>
                                 <p>#페퍼로구마크림치즈스틱 #아몬드고구마크림치즈스틱 #고구마크림치즈스틱</p>
                                 <strong><i class="xi-plus"></i>DISCOVER MORE</strong>
                             </div>
-                        </div>
-                        <img src="./img/main_center1.png" alt="">
-                    </figure>
-                    <figure>
-                        <div class="slide02">
-                            <img src="./img/main_img2.png" alt="">
-                            <div class="main_txt">
-                                <span>Auntie Anne’s</span>
+                        </figure>
+                        <figure>
+                            <div class="txt02">
+                                <span data-aos="fade-down">Auntie
+                                    Anne’s</span>
                                 <h2>리치<br />티에이드</h2>
                                 <p>#리치 티에이드 #히비스커스 #논카페인</p>
                                 <strong><i class="xi-plus"></i>DISCOVER MORE</strong>
                             </div>
-                        </div>
-                        <img src="./img/main_center2.png" alt="">
-                    </figure>
-                    <figure>
-                        <div class="slide03">
-                            <img src="./img/main_img3.png" alt="">
-                            <div class="main_txt">
-                                <span>Franchise</span>
+                        </figure>
+                        <figure>
+                            <div class="txt03">
+                                <span data-aos="fade-down">Franchise</span>
                                 <h2>With<br />Auntie Anne’s</h2>
                                 <p>앤티앤스 프레즐과 함께 할 가맹점 점주님을 모집합니다.</p>
                                 <strong><i class="xi-plus"></i>DISCOVER MORE</strong>
                             </div>
-                        </div>
-                        <img src="./img/main_center3.png" alt="">
-                    </figure>
+                        </figure>
+                    </div>
+                </div>
+                <div class="img vibration">
+                    <img src="./img/main_center1.png" alt="">
+                </div>
+                <div class="arrows">
+                    <span class="prevArrow">이전</span>
+                    <span class="nextArrow">다음</span>
+                </div>
+                <div class="Navi">
+                    <div>
+                        <a href="">
+                            <img src="./img/main-icon01.png" alt="">
+                            <p>고객소통방</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="./img/main-icon02.png" alt="">
+                            <p>매장찾기</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="./img/main-icon03.png" alt="">
+                            <p>가맹상담</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="./img/main-icon04.png" alt="">
+                            <p>딜리버리</p>
+                        </a>
+                    </div>
                 </div>
             </section>
-
+            <section class="mainMenu section">
+                <div class="inner">
+                    <h2>Auntie Anne’s Menu</h2>
+                    <div class="slide_menu">
+                        <figure>
+                            <img src="./img/product01_1-min.png" alt="">
+                            <div class="m_txt">
+                                <h3>아몬드 크림치즈 스틱</h3>
+                                <p>아몬드 크런치 토핑이 올려진<br />
+                                    스틱 안에 따뜻한 크림치즈가 듬뿍!<br />
+                                    부드럽고 달콤한 맛</p>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./img/product02_1-min.png" alt="">
+                            <div class="m_txt">
+                                <h3>아메리카노</h3>
+                                <p>신선한 원두의 깊은 풍미가 느껴지는<br />
+                                    시원한 아메리카노</p>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./img/product03_1-min.png" alt="">
+                            <div class="m_txt">
+                                <h3>오리지널 프레즐</h3>
+                                <p>프레즐 본래의 맛으로 굵은 정제<br />
+                                    소금을 뿌려 담백하고 고소한 맛</p>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./img/product04_1-min.png" alt="">
+                            <div class="m_txt">
+                                <h3>페페로니 프레즐</h3>
+                                <p>페페로니 햄과 치즈가<br />
+                                    어우러져 짭쪼릅한 맛</p>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./img/product05_1-min.png" alt="">
+                            <div class="m_txt">
+                                <h3>할라피뇨 치즈 핫도그</h3>
+                                <p>치즈와 할라피뇨가 어우러져<br />
+                                    짭짤하고 매콤한 맛</p>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./img/product06_1-min.png" alt="">
+                            <div class="m_txt">
+                                <h3>어니언 스틱</h3>
+                                <p>Sour Cream&Onion가루를 토핑하여<br />
+                                    새콤달콤하고 짭쪼릅한 맛의 스틱</p>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section class="mainCommunity section">
+                <div class="cont_event">
+                    <h2>EVENT</h2>
+                    <p>다양한 진행중인 이벤트를 즐겨보세요!</p>
+                </div>
+                <div class="cont_store">
+                    <h2>STORE</h2>
+                    <p>앤티앤스 매장을 쉽고 빠르게 찾아보세요!</p>
+                </div>
+                <div class="cont_delivery">
+                    <h2>DELIVERY SERVICE</h2>
+                    <p>갓 구운 프레즐을 더 빠르게 만날 수 있는 방법!</p>
+                </div>
+            </section>
+            <section class="mainFranchise section">
+                <div class="inner">
+                    <div class="w_txt">
+                        <h2>With<br />
+                            Auntie Anne’s</h2>
+                        <p>앤티앤스 프레즐과 함께 할<br />
+                            <strong>가맹점 점주님</strong>을 모집합니다.
+                        </p>
+                        <strong><i class="xi-plus"></i>DISCOVER MORE</strong>
+                    </div>
+                    <img src="./img/main-sec04_img.jpg" alt="">
+                </div>
+            </section>
+            <section class="footer section">
+                <h2><img src="./img/ft-logo.png" alt=""></h2>
+                <address>(주)재원푸드 서울특별시 서초구 반포대로 22 (서초동 1451-34번지) 서초평화빌딩 10층</address>
+                <div class="info">
+                    <p>TEL. 02-587-0955</p>
+                    <p>FAX. 02-587-0956</p>
+                </div>
+                <ul class="link">
+                    <li><a href="">재원푸드 홈페이지</a></li>
+                    <li><a href="">채용안내</a></li>
+                </ul>
+                <div class="sns">
+                    <img src="./img/ft-sns01.png" alt="">
+                    <img src="./img/ft-sns02.png" alt="">
+                    <img src="./img/ft-sns03.png" alt="">
+                </div>
+            </section>
         </main>
-        <footer class="footer">
-
+        <footer>
+            <p> &copy; 2023 AUNTIE ANNE'S KOREA, ALL RIGHTS RESERVED.</p>
         </footer>
-        <div class="toTop">
-            <i class="xi-arrow-up"></i>
-        </div>
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
