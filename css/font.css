@@ -3,6 +3,7 @@
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 
 
 @font-face {
@@ -19,13 +20,7 @@
     font-style: normal;
 }
 
-body {
-
-    /* font-family: 'NanumSquareRound', 'Playfair Display', 'Roboto', 'Noto Sans KR', 'Lora', 'Noto Serif KR', serif, sans-serif; */
-
-}
-
 html,
 body {
-    font-family: 'Playfair Display', 'Roboto', 'Noto Sans KR', 'Noto Serif KR', serif, sans-serif;
+    font-family: 'Cormorant Garamond', 'Roboto', 'Noto Sans KR', 'Noto Serif KR', serif, sans-serif;
 }
