@@ -7,6 +7,8 @@ $(function () {
         showActiveTooltip: true,
         navigationPosition: 'left',
         navigationTooltips: ['MAIN', 'MENU', 'COMMUNITY', 'FRANCHISE'],
+        loopTop: true,
+        loopBottom: true,
 
         afterLoad: function (lnk, idx) {
             console.log(lnk, idx);
@@ -15,9 +17,12 @@ $(function () {
             if (idx == 2 || idx == 4) {
                 //$('nav li').eq(1).find('a').addClass('on');
                 $('.gnb').addClass('on');
-                $('.gnb').addClass('on');
+                $('#fp-nav ul li a span').addClass('on');
+                $('#fp-nav ul li .fp-tooltip').addClass('on');
             } else {
                 $('.gnb').removeClass('on');
+                $('#fp-nav ul li a span').removeClass('on');
+                $('#fp-nav ul li .fp-tooltip').removeClass('on');
 
             }
 
@@ -30,7 +35,10 @@ $(function () {
                     opacity: 1,
                 })
             }
+
+
         }
+
     });
 
     $('.mainVisual .slide_img').slick({
@@ -93,6 +101,7 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 3
         // nextArrow: $('.mainMenu .nextArrow'),
+
     });
 
     $('.mainMenu .slide_menu').on('afterChange', function (e, s, c) {
